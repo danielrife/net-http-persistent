@@ -1119,6 +1119,9 @@ class Net::HTTP::Persistent
 
     thread[@request_key] = nil
     thread[@timeout_key] = nil
+
+    thread[@generation_key] = nil
+    thread[@ssl_generation_key] = nil
   end
 
   ##
